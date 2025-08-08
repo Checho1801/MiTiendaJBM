@@ -1,0 +1,174 @@
+/*
+    ----------------------------------------------------------
+    Este archivo contiene los estilos (diseño) de tu página web.
+    Cada línea de código define cómo se ve un elemento.
+    ----------------------------------------------------------
+*/
+
+/* --- Reseteo básico para que la página se vea igual en todos los navegadores --- */
+* {
+    margin: 0; /* Elimina los márgenes predeterminados. */
+    padding: 0; /* Elimina el relleno predeterminado. */
+    box-sizing: border-box; /* Asegura que el tamaño de los elementos se calcule de forma consistente. */
+    font-family: Arial, sans-serif; /* Define una fuente base. */
+}
+
+body {
+    background-color: #f0f2f5; /* Un color de fondo suave. */
+    color: #333; /* Color de texto principal. */
+    line-height: 1.6; /* Espaciado entre líneas para una mejor legibilidad. */
+}
+
+/* --- Estilos del encabezado --- */
+.header {
+    text-align: center; /* Centra el contenido del encabezado. */
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-bar {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.logo-section {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 150px; /* Tamaño máximo del logo. */
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-top: 10px;
+}
+
+/* --- Estilos generales de las secciones --- */
+.main-content {
+    max-width: 1200px; /* Ancho máximo del contenido para que no se extienda demasiado en pantallas grandes. */
+    margin: 20px auto; /* Centra el contenido principal en la página. */
+    padding: 0 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Bordes redondeados para un diseño más moderno. */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil para destacar las secciones. */
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2980b9;
+}
+
+/* --- Estilos para la sección de categorías --- */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre los botones. */
+    margin-bottom: 30px;
+}
+
+.category-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.category-btn:hover {
+    background-color: #2980b9;
+}
+
+/* --- Estilos para la cuadrícula de productos --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crea una cuadrícula responsiva. */
+    gap: 25px; /* Espacio entre las tarjetas de producto. */
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse. */
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.product-card p.price {
+    font-size: 1.4em;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.product-card .add-to-cart-btn {
+    padding: 8px 15px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* --- Estilos del carrito de compras --- */
+.cart-section {
+    padding: 20px;
+    border: 2px dashed #ccc;
+    background-color: #f9f9f9;
+}
+
+#cart-items div {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+#cart-total {
+    text-align: right;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #25d366; /* El color verde de WhatsApp. */
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#checkout-btn:hover {
+    background-color: #128c7e;
+}
