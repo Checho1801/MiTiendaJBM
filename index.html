@@ -5,18 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Distribuidora JBM SAS</title>
 <link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <header class="header">
-    <div class="contact-bar">
-        <span>+57 3212773768</span>
-        <span>sgj1801@gmail.com</span>
+    <div class="contact-bar-full">
+        <a href="tel:+573212773768" class="contact-item">
+            <i class="fas fa-phone-alt"></i><span>+57 321 277 3768</span>
+        </a>
+        <a href="mailto:sgj1801@gmail.com" class="contact-item">
+            <i class="fas fa-envelope"></i><span>sgj1801@gmail.com</span>
+        </a>
+        <a href="#map-section" class="contact-item">
+            <i class="fas fa-map-marker-alt"></i><span>Ver en el mapa</span>
+        </a>
     </div>
 
-    <div class="logo-section">
+    <div class="logo-name-section">
         <img src="assets/logos/logo-jbm.png" alt="Logo de Distribuidora JBM SAS" class="logo">
-        <h1>Distribuidora JBM SAS</h1>
+        <h1 class="company-name">Distribuidora JBM SAS</h1>
     </div>
 </header>
 
@@ -26,17 +34,29 @@
     </div>
 
     <section class="promotions-section">
-        <h2>¡Promociones del mes!</h2>
-        </section>
+        <h2>¡Promociones del Mes!</h2>
+        <div class="carousel-container">
+            <div class="carousel-track" id="carousel-track">
+                </div>
+            <button class="carousel-btn prev-btn" id="prev-btn">❮</button>
+            <button class="carousel-btn next-btn" id="next-btn">❯</button>
+        </div>
+    </section>
+
+    <section class="about-us-section">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            Somos una empresa dedicada a la distribución de productos de alta calidad para el hogar y la industria. 
+            Con años de experiencia, nos destacamos por nuestro compromiso con la excelencia y el servicio al cliente. 
+            Nuestra misión es ofrecerte los mejores productos al mejor precio, garantizando siempre tu satisfacción.
+        </p>
+    </section>
 
     <section class="catalog-section">
         <h2>Catálogo de Productos</h2>
-        <div class="categories">
-            <button class="category-btn" data-category="aseo">ASEO</button>
-            <button class="category-btn" data-category="alimentos">ALIMENTOS</button>
-            <button class="category-btn" data-category="otros">OTROS</button>
-        </div>
-
+        <div class="categories" id="category-container">
+            </div>
+        
         <div id="product-list" class="product-grid">
             </div>
     </section>
@@ -44,17 +64,28 @@
     <section class="cart-section">
         <h2>Mi Carrito</h2>
         <div id="cart-items">
-            </div>
+            <p>El carrito está vacío.</p>
+        </div>
         <div id="cart-total">
-            </div>
+            Total: $0
+        </div>
         <button id="checkout-btn">HACER PEDIDO por WhatsApp</button>
     </section>
 
     <section class="brands-section">
-        <h2>Trabajamos con las mejores marcas</h2>
+        <h2>Trabajamos con las Mejores Marcas</h2>
         <div class="brands-grid">
             </div>
     </section>
+
+    
+    <section id="map-section" class="map-section">
+        <h2>Nuestra Ubicación</h2>
+        <div class="map-container">
+            <<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.04107745142!2d-74.11350212636081!3d4.586650142638507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f98d8161d4705%3A0x3b2f113dd86df6b2!2s%C3%89xito%20Centenario!5e0!3m2!1ses!2sco!4v1754701867960!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
+        </div>
+    </section>
+
 </main>
 
 <script src="script.js"></script>

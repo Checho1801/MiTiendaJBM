@@ -1,50 +1,78 @@
 /*
 ----------------------------------------------------------
-Estilos con colores rojos y mejor tipografía
+Estilos con colores rojos, tipografía mejorada y nuevas secciones
 ----------------------------------------------------------
 */
 
-/* --- Reseteo básico --- */
+/* --- Reseteo básico y fuentes --- */
 
 {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-background-color: #f9f9f9; /* Fondo muy claro /
+background-color: #f9f9f9;
 color: #333;
-line-height: 1.7; / Ligeramente más espaciado */
+line-height: 1.7;
 }
 
-/* --- Encabezado --- /
+/* --- Encabezado --- */
 .header {
 text-align: center;
-padding: 30px 20px;
-background-color: #e74c3c; / Rojo principal /
-color: #fff; / Texto blanco sobre el rojo /
-border-bottom: 2px solid #c0392b; / Rojo más oscuro para el borde */
+padding: 20px 0;
+background-color: #e74c3c;
+color: #fff;
+border-bottom: 2px solid #c0392b;
 }
 
-.contact-bar {
-font-size: 0.95em;
-margin-bottom: 15px;
+.contact-bar-full {
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 10px 20px;
+background-color: #c0392b;
+border-bottom: 1px solid #a03126;
 }
 
-.logo-section {
-margin-bottom: 25px;
+.contact-item {
+color: white;
+text-decoration: none;
+display: flex;
+align-items: center;
+gap: 8px;
+font-size: 0.9em;
+transition: color 0.3s;
+}
+
+.contact-item:hover {
+color: #f1c40f;
+}
+
+.contact-item i {
+font-size: 1.2em;
+}
+
+.logo-name-section {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+padding: 20px;
 }
 
 .logo {
-max-width: 180px; /* Logo un poco más grande */
+max-width: 150px;
 }
 
-h1 {
-font-size: 3em;
-margin-top: 15px;
+.company-name {
+font-size: 3.5em;
+font-style: italic;
 font-weight: bold;
+color: #fff;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 /* --- Contenido principal --- */
@@ -54,7 +82,6 @@ margin: 30px auto;
 padding: 0 30px;
 }
 
-/* --- Estilos para la barra de búsqueda --- */
 .search-container {
 text-align: center;
 margin-bottom: 30px;
@@ -84,34 +111,123 @@ border: 1px solid #ddd;
 }
 
 h2 {
-font-size: 2.8em;
+font-size: 2.5em;
 margin-bottom: 30px;
 color: #e74c3c;
 text-align: center;
 }
 
-/* --- Categorías --- */
+/* --- Carrusel de promociones --- */
+.carousel-container {
+position: relative;
+overflow: hidden;
+max-width: 800px;
+margin: 0 auto;
+border-radius: 12px;
+}
+
+.carousel-track {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+min-width: 100%;
+height: auto;
+text-align: center;
+position: relative;
+}
+
+.carousel-slide img {
+width: 100%;
+border-radius: 12px;
+}
+
+.carousel-slide-caption {
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+background-color: rgba(0, 0, 0, 0.6);
+color: white;
+padding: 10px 20px;
+border-radius: 8px;
+font-size: 1.2em;
+}
+
+.carousel-btn {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+border: none;
+padding: 15px;
+cursor: pointer;
+font-size: 1.5em;
+z-index: 100;
+transition: background-color 0.3s;
+}
+
+.carousel-btn:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+left: 10px;
+border-radius: 50%;
+}
+
+.next-btn {
+right: 10px;
+border-radius: 50%;
+}
+
+/* --- Sobre Nosotros --- */
+.about-us-section p {
+font-size: 1.1em;
+text-align: center;
+color: #555;
+max-width: 800px;
+margin: 0 auto;
+}
+
+/* --- Categorías (con imágenes) --- */
 .categories {
 display: flex;
 justify-content: center;
-gap: 20px;
+gap: 30px;
 margin-bottom: 40px;
 }
 
-.category-btn {
-padding: 12px 25px;
-font-size: 1.1em;
+.category-card {
+text-align: center;
 cursor: pointer;
-background-color: #c0392b;
-color: white;
-border: none;
-border-radius: 8px;
-transition: background-color 0.3s, transform 0.2s;
+transition: transform 0.3s, box-shadow 0.3s;
+border-radius: 12px;
+overflow: hidden;
+width: 250px;
+border: 1px solid #ddd;
 }
 
-.category-btn:hover {
-background-color: #e74c3c;
-transform: scale(1.05);
+.category-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.category-card img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+}
+
+.category-card span {
+display: block;
+padding: 15px;
+background-color: #c0392b;
+color: white;
+font-size: 1.2em;
+font-weight: bold;
 }
 
 /* --- Productos --- */
@@ -119,6 +235,7 @@ transform: scale(1.05);
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 gap: 30px;
+margin-top: 40px;
 }
 
 .product-card {
@@ -208,6 +325,16 @@ justify-content: space-between;
 align-items: center;
 }
 
+#cart-items button {
+background-color: #e74c3c;
+color: white;
+border: none;
+padding: 5px 10px;
+cursor: pointer;
+border-radius: 5px;
+font-size: 0.8em;
+}
+
 #cart-total {
 text-align: right;
 font-size: 1.6em;
@@ -242,19 +369,96 @@ text-align: center;
 .brands-grid {
 display: flex;
 flex-wrap: wrap;
-justify-content: space-around;
+justify-content: center;
 align-items: center;
-gap: 20px;
+gap: 25px;
 margin-top: 20px;
 }
 
-.brands-grid img {
-max-width: 150px;
+.brand-item {
+text-align: center;
+width: 120px;
+}
+
+.brand-item img {
+max-width: 100%;
 height: auto;
 opacity: 0.7;
 transition: opacity 0.3s;
 }
 
-.brands-grid img:hover {
+.brand-item:hover img {
 opacity: 1;
+}
+
+.brand-item span {
+display: block;
+margin-top: 5px;
+font-weight: bold;
+font-size: 0.9em;
+}
+
+/* --- Suscripción --- */
+.newsletter-section {
+text-align: center;
+}
+
+.newsletter-section h2 {
+font-size: 2em;
+}
+
+.newsletter-section form {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+max-width: 500px;
+margin: 0 auto;
+}
+
+.form-group {
+width: 100%;
+text-align: left;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+
+.form-group input {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 1em;
+}
+
+.newsletter-section button {
+padding: 12px 25px;
+background-color: #27ae60;
+color: white;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 1.1em;
+transition: background-color 0.3s;
+}
+
+.newsletter-section button:hover {
+background-color: #219653;
+}
+
+/* --- Mapa --- */
+.map-section {
+text-align: center;
+}
+
+.map-container {
+max-width: 800px;
+margin: 0 auto;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
