@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Distribuidora JBM SAS</title>
-<link rel="stylesheet" href="styles.css">
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Distribuidora JBM SAS | Alimentos, Aseo y Productos para Negocios</title>
+  <meta name="description" content="Distribuidora JBM SAS: venta y distribución de alimentos, productos de aseo y artículos varios para negocios, tiendas, restaurantes y empresas.">
+  <meta name="author" content="Distribuidora JBM SAS">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph (para compartir en Facebook/WhatsApp) -->
+  <meta property="og:title" content="Distribuidora JBM SAS">
+  <meta property="og:description" content="Venta y distribución de alimentos, productos de aseo y artículos varios para negocios, tiendas y empresas.">
+  <meta property="og:image" content="assets/logos/logo-jbm.png">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Distribuidora JBM SAS">
+  <meta name="twitter:description" content="Distribuidora de alimentos, productos de aseo y más para negocios.">
+  <meta name="twitter:image" content="assets/logos/logo-jbm.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Iconos -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
 <header class="header">
@@ -24,7 +44,7 @@
 
     <div class="logo-name-section">
         <img src="assets/logos/logo-jbm.png" alt="Logo de Distribuidora JBM SAS" class="logo">
-        <h1 class="company-name">Distribuidora JBM SAS</h1>
+        <h1 class="company-name">Distribuciones LOGISTIC JBM SAS</h1>
     </div>
 </header>
 
@@ -37,7 +57,7 @@
         <h2>¡Promociones del Mes!</h2>
         <div class="carousel-container">
             <div class="carousel-track" id="carousel-track">
-                </div>
+            </div>
             <button class="carousel-btn prev-btn" id="prev-btn">❮</button>
             <button class="carousel-btn next-btn" id="next-btn">❯</button>
         </div>
@@ -46,8 +66,8 @@
     <section class="about-us-section">
         <h2>Sobre Nosotros</h2>
         <p>
-            Somos una empresa dedicada a la distribución de productos de alta calidad para el hogar y la industria. 
-            Con años de experiencia, nos destacamos por nuestro compromiso con la excelencia y el servicio al cliente. 
+            Somos una empresa dedicada a la distribución de productos de alta calidad para el hogar y la industria.
+            Con años de experiencia, nos destacamos por nuestro compromiso con la excelencia y el servicio al cliente.
             Nuestra misión es ofrecerte los mejores productos al mejor precio, garantizando siempre tu satisfacción.
         </p>
     </section>
@@ -55,10 +75,10 @@
     <section class="catalog-section">
         <h2>Catálogo de Productos</h2>
         <div class="categories" id="category-container">
-            </div>
-        
+        </div>
+    
         <div id="product-list" class="product-grid">
-            </div>
+        </div>
     </section>
 
     <section class="cart-section">
@@ -75,19 +95,53 @@
     <section class="brands-section">
         <h2>Trabajamos con las Mejores Marcas</h2>
         <div class="brands-grid">
-            </div>
+        </div>
     </section>
-
     
     <section id="map-section" class="map-section">
         <h2>Nuestra Ubicación</h2>
         <div class="map-container">
-            <<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.04107745142!2d-74.11350212636081!3d4.586650142638507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f98d8161d4705%3A0x3b2f113dd86df6b2!2s%C3%89xito%20Centenario!5e0!3m2!1ses!2sco!4v1754701867960!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.04107745142!2d-74.11350212636081!3d4.586650142638507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f98d8161d4705%3A0x3b2f113dd86df6b2!2s%C3%89xito%20Centenario!5e0!3m2!1ses!2sco!4v1754701867960!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 
+        <form action="https://formspree.io/f/xvgqezvd" method="POST" class="formulario-contacto">
+        <h3>Si quieres más información sobre nuestros productos, nuevos productos y promociones, déjanos tus datos. 📋</h3>
+  
+        <label for="nombre">
+            Nombre completo:
+             <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+         </label>
+  
+        <label for="email">
+            Correo electrónico:
+            <input type="email" id="email" name="email" placeholder="Tu correo" required />
+        </label>
+        
+        <label for="telefono">
+            Teléfono:
+            <input type="tel" id="telefono" name="telefono" placeholder="Tu número de contacto" />
+        </label>
+        
+        <label for="mensaje">
+            Mensaje:
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </label>
+        
+        <button type="submit">Enviar</button>
+        </form>
+
+
 </main>
+
+<footer class="footer">
+    <p>&copy; 2023 Distribuidora JBM SAS. Todos los derechos reservados.</p>
+    <div class="social-media">
+        <a href="https://www.facebook.com/distribuidorajbmsas" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/distribuidorajbmsas" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com/distribuidorajbmsas" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+    </div>
 
 <script src="script.js"></script>
 </body>
-</html>
+</html>  
